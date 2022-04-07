@@ -4,7 +4,7 @@ In this project I wrote the animation code of an element in javascript
 
 index.html=
 
- in this project I create 5 <div> tag in my (index) and inside of them i create <p> tag with "animate" class.
+ in this project I create 5 div tag in my (index) and inside of them i create p tag with "animate" class.
  and i import animate.css in my project that I downloaded from the "https://animate.style/" then link animate.css to my index.html.
   
 script.js=
