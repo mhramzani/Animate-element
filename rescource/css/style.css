@@ -1,0 +1,96 @@
+    /*Variables*/
+    
+     :root {
+        --clr-black: rgb(0, 0, 0);
+        --clr-gray: rgb(73, 73, 73);
+        --clr-blue: rgba(30, 31, 94, 0.904);
+        --clr-darkRed: rgb(77, 21, 21);
+        --clr-darkYellow: rgb(119, 113, 27);
+        --clr-darkGreen: rgb(33, 104, 23);
+        --clr-darkPink: rgb(138, 21, 138);
+        --clr-white: rgb(255, 255, 255);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'yekan-regular';
+    }
+    
+    html {
+        background-color: var(--clr-white);
+        font-size: 20px;
+        font-weight: 200;
+        text-rendering: optimizeLegibility;
+    }
+    
+    body {
+        font-family: 'yekan-regular';
+    }
+    
+    header {
+        text-align: center;
+        height: 100vh;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    
+    h1::after {
+        display: block;
+        height: 2px;
+        background-color: var(--clr-blue);
+        content: " ";
+        width: 7rem;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    
+    section {
+        padding: 5rem 0;
+        text-align: center;
+    }
+    
+    button {
+        text-transform: uppercase;
+        background-color: var(--clr-black);
+        font-weight: bold;
+        color: var(--clr-white);
+        padding: 5rem;
+        border: 2px solid var(--clr-black);
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .animate-element1 {
+        background-color: var(--clr-gray);
+    }
+    
+    .animate-element2 {
+        background-color: var(--clr-blue);
+    }
+    
+    .animate-element3 {
+        background-color: var(--clr-darkGreen);
+    }
+    
+    .animate-element4 {
+        background-color: var(--clr-darkRed);
+    }
+    
+    .animate-element5 {
+        background-color: var(--clr-darkPink);
+    }
+    
+     :is(.animate-element1, .animate-element2, .animate-element3, .animate-element4, .animate-element5) {
+        padding: 6rem;
+    }
+    
+     :is(.animate-element1, .animate-element2, .animate-element3, .animate-element4, .animate-element5) p {
+        color: var(--clr-white);
+        width: 70%;
+        margin: 0 auto;
+    }
